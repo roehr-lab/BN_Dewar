@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "step": 6,
+  "step_name": "step_006",
+  "success": true,
+  "calculation_mode": "explicit_geometry_archive_restart_v2",
+  "started_at": "2026-06-25T08:04:48.919352+00:00",
+  "finished_at": "2026-06-25T08:16:06.357708+00:00",
+  "duration_seconds": 677.438,
+  "command": [
+    "srun",
+    "--mpi=pmi2",
+    "BAGEL",
+    "bagel.json"
+  ],
+  "returncode": 0,
+  "previous_archive_sha256": "7725c663b2b0225997bfc30b638b4e58e85000384e012abc182b27b5f3f9e944",
+  "archive_sha256": "1ae64a526a66c7dd702b91d740c057472a81f62d3f1aeb6f78be9facc364c057",
+  "geometry_max_deviation_bohr": 7.255989250151663e-07,
+  "slurm_job_id": "484547"
+}

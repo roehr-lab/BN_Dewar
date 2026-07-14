@@ -1,0 +1,626 @@
+--------------------------------------------------
+JOB FRONT-END 484547 on wux54
+SLURM ENVIRONMENT
+--------------------------------------------------
+SLURM_JOB_ID                   = 484547              
+SLURM_ARRAY_JOB_ID             = N/A                 
+SLURM_ARRAY_TASK_ID            = N/A                 
+SLURM_JOB_NAME                 = bagel-chain         
+SLURM_JOB_PARTITION            = wux5x               
+SLURM_JOB_NUM_NODES            = 1                   
+SLURM_JOB_CPUS_PER_NODE        = 20                  
+SLURM_NTASKS                   = 20                  
+SLURM_NTASKS_PER_NODE          = N/A                 
+--------------------------------------------------
+--------------------------------------------------
+PBS ENVIRONMENT
+--------------------------------------------------
+PBS_JOBID                      = 484547              
+PBS_ARRAYID                    = N/A                 
+PBS_JOBNAME                    = bagel-chain         
+PBS_QUEUE                      = wux5x               
+PBS_NUM_NODES                  = 1                   
+PBS_NUM_PPN                    = 1                   
+PBS_NP                         = 20                  
+PBS_NODEFILE                   = /tmp/484547/nodes   
+--------------------------------------------------
+  * process grid (5, 4) will be used
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+    wux54                           
+
+  * using 20 threads per process
+
+  ===============================================================
+    BAGEL - Freshly leavened quantum chemistry                   
+  ===============================================================
+
+  *** Geometry ***
+
+  { "atom" : "C", "xyz" : [      4.509791,     -1.113361,      1.189544 ] },
+  { "atom" : "C", "xyz" : [      4.262530,      1.582096,      1.520794 ] },
+  { "atom" : "C", "xyz" : [      1.959150,      2.756912,      1.280097 ] },
+  { "atom" : "N", "xyz" : [     -0.232480,      1.349819,      0.788778 ] },
+  { "atom" : "B", "xyz" : [     -0.152514,     -1.424625,      0.041042 ] },
+  { "atom" : "C", "xyz" : [      2.475495,     -2.591903,      0.465561 ] },
+  { "atom" : "C", "xyz" : [     -2.565422,     -2.762713,     -0.858435 ] },
+  { "atom" : "C", "xyz" : [     -4.809264,     -1.286639,     -1.074217 ] },
+  { "atom" : "C", "xyz" : [     -4.397015,      1.320524,     -1.153242 ] },
+  { "atom" : "C", "xyz" : [     -1.786034,      2.129639,     -1.150017 ] },
+  { "atom" : "H", "xyz" : [      6.363524,     -1.965222,      1.522785 ] },
+  { "atom" : "H", "xyz" : [      5.912034,      2.742441,      1.965521 ] },
+  { "atom" : "H", "xyz" : [      1.739655,      4.809629,      1.452090 ] },
+  { "atom" : "H", "xyz" : [      2.757055,     -4.627650,      0.246671 ] },
+  { "atom" : "H", "xyz" : [     -2.579927,     -4.788301,     -1.308056 ] },
+  { "atom" : "H", "xyz" : [     -6.715331,     -2.098327,     -1.200829 ] },
+  { "atom" : "H", "xyz" : [     -5.870991,      2.765066,     -1.050408 ] },
+  { "atom" : "H", "xyz" : [     -0.870255,      3.202615,     -2.677677 ] },
+
+  Number of auxiliary basis functions:      884
+
+  Since a DF basis is specified, we compute 2- and 3-index integrals:
+    o Being stored without compression. Storage requirement is 0.645 GB
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.15
+       - 2-index ints                              0.01
+       - computing inverse                         0.10
+        elapsed time:        0.26 sec.
+
+
+  Number of basis functions:      302
+  Number of electrons      :       68
+
+
+    * METHOD: MOLECULE                             0.29
+
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.12
+       - 2-index ints                              0.01
+       - computing inverse                         0.07
+
+  Using the coefficient projected to the input geometry 
+
+
+    * METHOD: LOAD_REF                             0.31
+
+  ---------------------------
+      CASSCF calculation     
+  ---------------------------
+
+    * nstate   :      2
+    * nclosed  :     28
+    * nact     :     12
+    * nvirt    :    262
+  === CASSCF iteration (/home/buehlerm/software/bagel/installation/share/aug-cc-pVDZ.json) ===
+
+    * Using the second-order algorithm
+
+      0  0      -386.45158388     3.68e-02     18.69
+      0  1      -386.40051675     0.00e+00     18.69
+
+         res : 3.48e-01   lamb: 1.00e+00   eps : -6.33e-01   step: 2.89e-01    0.07
+         res : 7.75e-02   lamb: 1.00e+00   eps : -6.50e-01   step: 2.67e-01    0.06
+         res : 1.68e-02   lamb: 1.00e+00   eps : -6.50e-01   step: 2.67e-01    0.06
+         res : 4.68e-03   lamb: 1.00e+00   eps : -6.50e-01   step: 2.68e-01    0.06
+         res : 1.23e-03   lamb: 1.00e+00   eps : -6.50e-01   step: 2.68e-01    0.06
+         res : 2.94e-04   lamb: 1.00e+00   eps : -6.50e-01   step: 2.68e-01    0.06
+         res : 8.36e-05   lamb: 1.00e+00   eps : -6.50e-01   step: 2.68e-01    0.06
+         res : 2.16e-05   lamb: 1.00e+00   eps : -6.50e-01   step: 2.68e-01    0.06
+
+      1  0      -386.79733547     1.54e-03     19.07
+      1  1      -386.74756577     0.00e+00     19.07
+
+         res : 5.06e-02   lamb: 1.00e+00   eps : -1.06e-02   step: 1.48e-01    0.06
+         res : 2.15e-02   lamb: 1.00e+00   eps : -1.12e-02   step: 1.63e-01    0.06
+         res : 6.69e-03   lamb: 1.00e+00   eps : -1.14e-02   step: 1.69e-01    0.06
+         res : 2.63e-03   lamb: 1.00e+00   eps : -1.14e-02   step: 1.72e-01    0.06
+         res : 1.04e-03   lamb: 1.00e+00   eps : -1.14e-02   step: 1.73e-01    0.06
+         res : 4.10e-04   lamb: 1.00e+00   eps : -1.14e-02   step: 1.73e-01    0.06
+         res : 1.86e-04   lamb: 1.00e+00   eps : -1.14e-02   step: 1.73e-01    0.06
+         res : 8.15e-05   lamb: 1.00e+00   eps : -1.14e-02   step: 1.73e-01    0.06
+         res : 3.26e-05   lamb: 1.00e+00   eps : -1.14e-02   step: 1.73e-01    0.06
+         res : 1.32e-05   lamb: 1.00e+00   eps : -1.14e-02   step: 1.73e-01    0.06
+
+      2  0      -386.80109727     2.13e-04     19.11
+      2  1      -386.75597650     0.00e+00     19.11
+
+         res : 1.06e-02   lamb: 1.00e+00   eps : -1.70e-04   step: 2.54e-02    0.06
+         res : 3.39e-03   lamb: 1.00e+00   eps : -2.06e-04   step: 4.03e-02    0.06
+         res : 1.50e-03   lamb: 1.00e+00   eps : -2.12e-04   step: 4.42e-02    0.06
+         res : 5.88e-04   lamb: 1.00e+00   eps : -2.13e-04   step: 4.52e-02    0.06
+         res : 2.03e-04   lamb: 1.00e+00   eps : -2.13e-04   step: 4.54e-02    0.06
+         res : 8.44e-05   lamb: 1.00e+00   eps : -2.13e-04   step: 4.54e-02    0.06
+         res : 4.39e-05   lamb: 1.00e+00   eps : -2.13e-04   step: 4.55e-02    0.06
+         res : 2.53e-05   lamb: 1.00e+00   eps : -2.13e-04   step: 4.55e-02    0.06
+         res : 1.21e-05   lamb: 1.00e+00   eps : -2.13e-04   step: 4.55e-02    0.06
+         res : 5.88e-06   lamb: 1.00e+00   eps : -2.13e-04   step: 4.55e-02    0.06
+         res : 2.76e-06   lamb: 1.00e+00   eps : -2.13e-04   step: 4.55e-02    0.06
+
+      3  0      -386.80075828     9.63e-05     18.76
+      3  1      -386.75659473     0.00e+00     18.76
+
+         res : 3.37e-03   lamb: 1.00e+00   eps : -2.31e-05   step: 6.80e-03    0.06
+         res : 1.05e-03   lamb: 1.00e+00   eps : -2.77e-05   step: 1.23e-02    0.06
+         res : 5.77e-04   lamb: 1.00e+00   eps : -2.83e-05   step: 1.35e-02    0.06
+         res : 2.11e-04   lamb: 1.00e+00   eps : -2.84e-05   step: 1.38e-02    0.06
+         res : 8.55e-05   lamb: 1.00e+00   eps : -2.84e-05   step: 1.40e-02    0.06
+         res : 4.11e-05   lamb: 1.00e+00   eps : -2.84e-05   step: 1.40e-02    0.06
+         res : 2.46e-05   lamb: 1.00e+00   eps : -2.84e-05   step: 1.40e-02    0.06
+         res : 1.43e-05   lamb: 1.00e+00   eps : -2.84e-05   step: 1.40e-02    0.06
+         res : 5.69e-06   lamb: 1.00e+00   eps : -2.84e-05   step: 1.40e-02    0.06
+         res : 2.25e-06   lamb: 1.00e+00   eps : -2.84e-05   step: 1.40e-02    0.06
+         res : 9.78e-07   lamb: 1.00e+00   eps : -2.84e-05   step: 1.40e-02    0.06
+
+      4  0      -386.80060324     4.63e-05     18.41
+      4  1      -386.75679140     0.00e+00     18.41
+
+         res : 1.59e-03   lamb: 1.00e+00   eps : -5.27e-06   step: 3.33e-03    0.06
+         res : 4.78e-04   lamb: 1.00e+00   eps : -6.30e-06   step: 6.01e-03    0.06
+         res : 2.56e-04   lamb: 1.00e+00   eps : -6.42e-06   step: 6.45e-03    0.06
+         res : 9.77e-05   lamb: 1.00e+00   eps : -6.44e-06   step: 6.58e-03    0.06
+         res : 4.12e-05   lamb: 1.00e+00   eps : -6.44e-06   step: 6.63e-03    0.06
+         res : 1.89e-05   lamb: 1.00e+00   eps : -6.44e-06   step: 6.64e-03    0.06
+         res : 1.10e-05   lamb: 1.00e+00   eps : -6.45e-06   step: 6.64e-03    0.06
+         res : 6.80e-06   lamb: 1.00e+00   eps : -6.45e-06   step: 6.64e-03    0.06
+         res : 2.73e-06   lamb: 1.00e+00   eps : -6.45e-06   step: 6.64e-03    0.06
+         res : 1.04e-06   lamb: 1.00e+00   eps : -6.45e-06   step: 6.64e-03    0.06
+         res : 4.33e-07   lamb: 1.00e+00   eps : -6.45e-06   step: 6.64e-03    0.06
+
+      5  0      -386.80052878     2.26e-05     18.49
+      5  1      -386.75687550     0.00e+00     18.49
+
+         res : 8.15e-04   lamb: 1.00e+00   eps : -1.32e-06   step: 1.77e-03    0.06
+         res : 2.33e-04   lamb: 1.00e+00   eps : -1.58e-06   step: 3.14e-03    0.06
+         res : 1.22e-04   lamb: 1.00e+00   eps : -1.61e-06   step: 3.34e-03    0.06
+         res : 4.78e-05   lamb: 1.00e+00   eps : -1.61e-06   step: 3.39e-03    0.06
+         res : 2.04e-05   lamb: 1.00e+00   eps : -1.61e-06   step: 3.42e-03    0.06
+         res : 9.21e-06   lamb: 1.00e+00   eps : -1.61e-06   step: 3.42e-03    0.06
+         res : 5.27e-06   lamb: 1.00e+00   eps : -1.62e-06   step: 3.42e-03    0.06
+         res : 3.32e-06   lamb: 1.00e+00   eps : -1.62e-06   step: 3.42e-03    0.06
+         res : 1.37e-06   lamb: 1.00e+00   eps : -1.62e-06   step: 3.42e-03    0.06
+         res : 5.18e-07   lamb: 1.00e+00   eps : -1.62e-06   step: 3.42e-03    0.06
+         res : 2.09e-07   lamb: 1.00e+00   eps : -1.62e-06   step: 3.42e-03    0.06
+
+      6  0      -386.80049143     1.12e-05     18.80
+      6  1      -386.75691529     0.00e+00     18.80
+
+         res : 4.23e-04   lamb: 1.00e+00   eps : -3.40e-07   step: 9.48e-04    0.06
+         res : 1.17e-04   lamb: 1.00e+00   eps : -4.08e-07   step: 1.65e-03    0.06
+         res : 6.05e-05   lamb: 1.00e+00   eps : -4.16e-07   step: 1.74e-03    0.06
+         res : 2.39e-05   lamb: 1.00e+00   eps : -4.17e-07   step: 1.77e-03    0.06
+         res : 1.03e-05   lamb: 1.00e+00   eps : -4.17e-07   step: 1.78e-03    0.06
+         res : 4.61e-06   lamb: 1.00e+00   eps : -4.17e-07   step: 1.78e-03    0.06
+         res : 2.60e-06   lamb: 1.00e+00   eps : -4.17e-07   step: 1.78e-03    0.06
+         res : 1.65e-06   lamb: 1.00e+00   eps : -4.17e-07   step: 1.78e-03    0.06
+         res : 6.97e-07   lamb: 1.00e+00   eps : -4.17e-07   step: 1.78e-03    0.06
+         res : 2.63e-07   lamb: 1.00e+00   eps : -4.17e-07   step: 1.78e-03    0.06
+         res : 1.05e-07   lamb: 1.00e+00   eps : -4.17e-07   step: 1.78e-03    0.06
+
+      7  0      -386.80047243     5.59e-06     18.48
+      7  1      -386.75693492     0.00e+00     18.48
+
+         res : 2.20e-04   lamb: 1.00e+00   eps : -8.87e-08   step: 5.01e-04    0.06
+         res : 5.93e-05   lamb: 1.00e+00   eps : -1.07e-07   step: 8.61e-04    0.06
+         res : 3.04e-05   lamb: 1.00e+00   eps : -1.08e-07   step: 9.06e-04    0.06
+         res : 1.21e-05   lamb: 1.00e+00   eps : -1.09e-07   step: 9.19e-04    0.06
+         res : 5.20e-06   lamb: 1.00e+00   eps : -1.09e-07   step: 9.26e-04    0.06
+         res : 2.34e-06   lamb: 1.00e+00   eps : -1.09e-07   step: 9.27e-04    0.06
+         res : 1.30e-06   lamb: 1.00e+00   eps : -1.09e-07   step: 9.26e-04    0.06
+         res : 8.32e-07   lamb: 1.00e+00   eps : -1.09e-07   step: 9.26e-04    0.06
+         res : 3.55e-07   lamb: 1.00e+00   eps : -1.09e-07   step: 9.26e-04    0.06
+         res : 1.34e-07   lamb: 1.00e+00   eps : -1.09e-07   step: 9.26e-04    0.06
+         res : 5.35e-08   lamb: 1.00e+00   eps : -1.09e-07   step: 9.26e-04    0.06
+
+      8  0      -386.80046273     2.82e-06     18.48
+      8  1      -386.75694478     0.00e+00     18.48
+
+         res : 1.14e-04   lamb: 1.00e+00   eps : -2.32e-08   step: 2.62e-04    0.06
+         res : 3.02e-05   lamb: 1.00e+00   eps : -2.79e-08   step: 4.47e-04    0.06
+         res : 1.54e-05   lamb: 1.00e+00   eps : -2.84e-08   step: 4.69e-04    0.06
+         res : 6.14e-06   lamb: 1.00e+00   eps : -2.85e-08   step: 4.75e-04    0.06
+         res : 2.64e-06   lamb: 1.00e+00   eps : -2.85e-08   step: 4.79e-04    0.06
+         res : 1.19e-06   lamb: 1.00e+00   eps : -2.85e-08   step: 4.79e-04    0.06
+         res : 6.59e-07   lamb: 1.00e+00   eps : -2.85e-08   step: 4.79e-04    0.06
+         res : 4.22e-07   lamb: 1.00e+00   eps : -2.85e-08   step: 4.79e-04    0.06
+         res : 1.82e-07   lamb: 1.00e+00   eps : -2.85e-08   step: 4.79e-04    0.06
+         res : 6.86e-08   lamb: 1.00e+00   eps : -2.85e-08   step: 4.79e-04    0.06
+         res : 2.74e-08   lamb: 1.00e+00   eps : -2.85e-08   step: 4.79e-04    0.06
+
+      9  0      -386.80045777     1.43e-06     18.40
+      9  1      -386.75694978     0.00e+00     18.40
+
+         res : 5.85e-05   lamb: 1.00e+00   eps : -6.08e-09   step: 1.36e-04    0.06
+         res : 1.54e-05   lamb: 1.00e+00   eps : -7.31e-09   step: 2.31e-04    0.06
+         res : 7.83e-06   lamb: 1.00e+00   eps : -7.44e-09   step: 2.42e-04    0.06
+         res : 3.13e-06   lamb: 1.00e+00   eps : -7.46e-09   step: 2.45e-04    0.06
+         res : 1.35e-06   lamb: 1.00e+00   eps : -7.47e-09   step: 2.47e-04    0.06
+         res : 6.07e-07   lamb: 1.00e+00   eps : -7.47e-09   step: 2.47e-04    0.06
+         res : 3.35e-07   lamb: 1.00e+00   eps : -7.47e-09   step: 2.47e-04    0.06
+         res : 2.15e-07   lamb: 1.00e+00   eps : -7.47e-09   step: 2.47e-04    0.06
+         res : 9.28e-08   lamb: 1.00e+00   eps : -7.47e-09   step: 2.47e-04    0.06
+         res : 3.51e-08   lamb: 1.00e+00   eps : -7.47e-09   step: 2.47e-04    0.06
+         res : 1.40e-08   lamb: 1.00e+00   eps : -7.47e-09   step: 2.47e-04    0.06
+
+     10  0      -386.80045523     7.27e-07     18.39
+     10  1      -386.75695233     0.00e+00     18.39
+
+         res : 3.01e-05   lamb: 1.00e+00   eps : -1.59e-09   step: 7.04e-05    0.06
+         res : 7.87e-06   lamb: 1.00e+00   eps : -1.92e-09   step: 1.19e-04    0.06
+         res : 3.99e-06   lamb: 1.00e+00   eps : -1.95e-09   step: 1.24e-04    0.06
+         res : 1.60e-06   lamb: 1.00e+00   eps : -1.96e-09   step: 1.26e-04    0.06
+         res : 6.89e-07   lamb: 1.00e+00   eps : -1.96e-09   step: 1.27e-04    0.06
+         res : 3.10e-07   lamb: 1.00e+00   eps : -1.96e-09   step: 1.27e-04    0.06
+         res : 1.71e-07   lamb: 1.00e+00   eps : -1.96e-09   step: 1.27e-04    0.06
+         res : 1.09e-07   lamb: 1.00e+00   eps : -1.96e-09   step: 1.27e-04    0.06
+         res : 4.75e-08   lamb: 1.00e+00   eps : -1.96e-09   step: 1.27e-04    0.06
+         res : 1.80e-08   lamb: 1.00e+00   eps : -1.96e-09   step: 1.27e-04    0.06
+         res : 7.17e-09   lamb: 1.00e+00   eps : -1.96e-09   step: 1.27e-04    0.06
+
+     11  0      -386.80045394     3.71e-07     18.63
+     11  1      -386.75695363     0.00e+00     18.63
+
+         res : 1.55e-05   lamb: 1.00e+00   eps : -4.18e-10   step: 3.63e-05    0.06
+         res : 4.02e-06   lamb: 1.00e+00   eps : -5.03e-10   step: 6.10e-05    0.06
+         res : 2.04e-06   lamb: 1.00e+00   eps : -5.12e-10   step: 6.39e-05    0.06
+         res : 8.18e-07   lamb: 1.00e+00   eps : -5.13e-10   step: 6.47e-05    0.06
+         res : 3.53e-07   lamb: 1.00e+00   eps : -5.13e-10   step: 6.52e-05    0.06
+         res : 1.59e-07   lamb: 1.00e+00   eps : -5.13e-10   step: 6.52e-05    0.06
+         res : 8.72e-08   lamb: 1.00e+00   eps : -5.13e-10   step: 6.52e-05    0.06
+         res : 5.59e-08   lamb: 1.00e+00   eps : -5.13e-10   step: 6.52e-05    0.06
+         res : 2.43e-08   lamb: 1.00e+00   eps : -5.13e-10   step: 6.52e-05    0.06
+         res : 9.22e-09   lamb: 1.00e+00   eps : -5.13e-10   step: 6.52e-05    0.06
+         res : 3.67e-09   lamb: 1.00e+00   eps : -5.13e-10   step: 6.52e-05    0.06
+
+     12  0      -386.80045327     1.89e-07     18.94
+     12  1      -386.75695430     0.00e+00     18.94
+
+         res : 7.93e-06   lamb: 1.00e+00   eps : -1.10e-10   step: 1.86e-05    0.06
+         res : 2.06e-06   lamb: 1.00e+00   eps : -1.32e-10   step: 3.13e-05    0.06
+         res : 1.04e-06   lamb: 1.00e+00   eps : -1.34e-10   step: 3.28e-05    0.06
+         res : 4.19e-07   lamb: 1.00e+00   eps : -1.35e-10   step: 3.32e-05    0.06
+         res : 1.80e-07   lamb: 1.00e+00   eps : -1.35e-10   step: 3.34e-05    0.06
+         res : 8.12e-08   lamb: 1.00e+00   eps : -1.35e-10   step: 3.35e-05    0.06
+         res : 4.46e-08   lamb: 1.00e+00   eps : -1.35e-10   step: 3.34e-05    0.06
+         res : 2.86e-08   lamb: 1.00e+00   eps : -1.35e-10   step: 3.34e-05    0.06
+         res : 1.24e-08   lamb: 1.00e+00   eps : -1.35e-10   step: 3.34e-05    0.06
+         res : 4.72e-09   lamb: 1.00e+00   eps : -1.35e-10   step: 3.34e-05    0.06
+
+     13  0      -386.80045293     9.69e-08     18.64
+     13  1      -386.75695464     0.00e+00     18.64
+
+         res : 4.07e-06   lamb: 1.00e+00   eps : -2.88e-11   step: 9.57e-06    0.06
+         res : 1.05e-06   lamb: 1.00e+00   eps : -3.46e-11   step: 1.60e-05    0.06
+         res : 5.34e-07   lamb: 1.00e+00   eps : -3.52e-11   step: 1.68e-05    0.06
+         res : 2.14e-07   lamb: 1.00e+00   eps : -3.53e-11   step: 1.70e-05    0.06
+         res : 9.24e-08   lamb: 1.00e+00   eps : -3.53e-11   step: 1.71e-05    0.06
+         res : 4.16e-08   lamb: 1.00e+00   eps : -3.53e-11   step: 1.71e-05    0.06
+         res : 2.29e-08   lamb: 1.00e+00   eps : -3.53e-11   step: 1.71e-05    0.06
+         res : 1.46e-08   lamb: 1.00e+00   eps : -3.53e-11   step: 1.71e-05    0.06
+         res : 6.37e-09   lamb: 1.00e+00   eps : -3.53e-11   step: 1.71e-05    0.06
+         res : 2.42e-09   lamb: 1.00e+00   eps : -3.53e-11   step: 1.71e-05    0.06
+
+     14  0      -386.80045276     4.96e-08     18.51
+     14  1      -386.75695481     0.00e+00     18.51
+
+         res : 2.08e-06   lamb: 1.00e+00   eps : -7.54e-12   step: 4.91e-06    0.06
+         res : 5.40e-07   lamb: 1.00e+00   eps : -9.07e-12   step: 8.22e-06    0.06
+         res : 2.73e-07   lamb: 1.00e+00   eps : -9.23e-12   step: 8.61e-06    0.06
+         res : 1.10e-07   lamb: 1.00e+00   eps : -9.26e-12   step: 8.72e-06    0.06
+         res : 4.73e-08   lamb: 1.00e+00   eps : -9.26e-12   step: 8.78e-06    0.06
+         res : 2.13e-08   lamb: 1.00e+00   eps : -9.26e-12   step: 8.79e-06    0.06
+         res : 1.17e-08   lamb: 1.00e+00   eps : -9.26e-12   step: 8.79e-06    0.06
+         res : 7.49e-09   lamb: 1.00e+00   eps : -9.26e-12   step: 8.79e-06    0.06
+         res : 3.26e-09   lamb: 1.00e+00   eps : -9.26e-12   step: 8.79e-06    0.06
+
+     15  0      -386.80045267     2.54e-08     18.45
+     15  1      -386.75695490     0.00e+00     18.45
+
+         res : 1.07e-06   lamb: 1.00e+00   eps : -1.98e-12   step: 2.51e-06    0.06
+         res : 2.76e-07   lamb: 1.00e+00   eps : -2.38e-12   step: 4.21e-06    0.06
+         res : 1.40e-07   lamb: 1.00e+00   eps : -2.42e-12   step: 4.41e-06    0.06
+         res : 5.61e-08   lamb: 1.00e+00   eps : -2.43e-12   step: 4.47e-06    0.06
+         res : 2.43e-08   lamb: 1.00e+00   eps : -2.43e-12   step: 4.50e-06    0.06
+         res : 1.10e-08   lamb: 1.00e+00   eps : -2.43e-12   step: 4.50e-06    0.06
+         res : 6.03e-09   lamb: 1.00e+00   eps : -2.43e-12   step: 4.50e-06    0.06
+         res : 3.85e-09   lamb: 1.00e+00   eps : -2.43e-12   step: 4.50e-06    0.06
+
+     16  0      -386.80045262     1.30e-08     18.19
+     16  1      -386.75695495     0.00e+00     18.19
+
+         res : 5.47e-07   lamb: 1.00e+00   eps : -5.19e-13   step: 1.29e-06    0.06
+         res : 1.42e-07   lamb: 1.00e+00   eps : -6.24e-13   step: 2.16e-06    0.06
+         res : 7.16e-08   lamb: 1.00e+00   eps : -6.35e-13   step: 2.26e-06    0.06
+         res : 2.88e-08   lamb: 1.00e+00   eps : -6.37e-13   step: 2.29e-06    0.06
+         res : 1.25e-08   lamb: 1.00e+00   eps : -6.37e-13   step: 2.30e-06    0.06
+         res : 5.72e-09   lamb: 1.00e+00   eps : -6.37e-13   step: 2.31e-06    0.06
+         res : 3.17e-09   lamb: 1.00e+00   eps : -6.37e-13   step: 2.31e-06    0.06
+
+     17  0      -386.80045260     6.64e-09     18.15
+     17  1      -386.75695497     0.00e+00     18.15
+
+    * Second-order optimization converged. *   
+
+    * Integral transformation done. Elapsed time: 0.08
+
+       - jop, kop                                  0.00
+       - denom                                     0.02
+     guess   0:   closed 11111.......         open .....11.....        
+     guess   1:   closed 111111......         open ............        
+
+  === FCI iteration ===
+
+      0  0      -386.66368928     3.61e-04      0.60
+      0  1      -386.60492350     3.83e-04      0.00
+
+      1  0      -386.77185723     1.82e-04      0.60
+      1  1      -386.72203862     1.99e-04      0.00
+
+      2  0      -386.79381749     9.39e-05      0.61
+      2  1      -386.74849360     1.04e-04      0.00
+
+      3  0      -386.79900001     4.58e-05      0.61
+      3  1      -386.75489855     5.22e-05      0.00
+
+      4  0      -386.80012604     2.20e-05      0.61
+      4  1      -386.75638343     2.63e-05      0.00
+
+      5  0      -386.80038020     1.06e-05      0.61
+      5  1      -386.75677824     1.43e-05      0.00
+
+      6  0      -386.80043595     4.95e-06      0.61
+      6  1      -386.75689436     7.88e-06      0.00
+
+      7  0      -386.80044794     2.45e-06      0.61
+      7  1      -386.75693006     4.65e-06      0.00
+
+      8  0      -386.80045116     1.38e-06      0.62
+      8  1      -386.75694386     3.23e-06      0.00
+
+      9  0      -386.80045218     7.86e-07      0.62
+      9  1      -386.75695070     2.23e-06      0.00
+
+     10  0      -386.80045249     4.17e-07      0.62
+     10  1      -386.75695360     1.32e-06      0.00
+
+     11  0      -386.80045257     2.04e-07      0.62
+     11  1      -386.75695458     7.14e-07      0.00
+
+     12  0      -386.80045259     1.02e-07      0.62
+     12  1      -386.75695486     3.93e-07      0.00
+
+     13  0      -386.80045260     5.44e-08      0.62
+     13  1      -386.75695494     2.09e-07      0.00
+
+     14  0      -386.80045260     3.06e-08      0.62
+     14  1      -386.75695496     1.07e-07      0.00
+
+     15  0      -386.80045260     1.69e-08      0.62
+     15  1      -386.75695497     5.53e-08      0.00
+
+     16  0      -386.80045260     8.85e-09      0.63
+     16  1      -386.75695497     3.04e-08      0.00
+
+     17  0      -386.80045260     4.48e-09      0.62
+     17  1      -386.75695497     1.64e-08      0.00
+
+     18  0      -386.80045260     2.10e-09      0.62
+     18  1      -386.75695497     8.11e-09      0.00
+
+     19  0      -386.80045260     1.00e-09      0.62
+     19  1      -386.75695497     3.94e-09      0.00
+    ** throwing out 2 trial vectors **
+
+     20  0      -386.80045260     5.24e-10      0.63
+     20  1      -386.75695497     2.03e-09      0.00
+    ** throwing out 2 trial vectors **
+
+     21  0      -386.80045260     2.71e-10      0.63
+     21  1      -386.75695497     1.07e-09      0.00
+    ** throwing out 2 trial vectors **
+
+     22  0      -386.80045260     1.29e-10      0.63
+     22  1      -386.75695497     5.65e-10      0.00
+    ** throwing out 2 trial vectors **
+
+     23  0 *    -386.80045260     5.96e-11      0.53
+     23  1      -386.75695497     3.02e-10      0.00
+    ** throwing out 1 trial vectors **
+
+     24  0 *    -386.80045260     4.55e-11      0.35
+     24  1      -386.75695497     1.64e-10      0.00
+    ** throwing out 1 trial vectors **
+
+     25  0 *    -386.80045260     4.18e-11      0.25
+     25  1 *    -386.75695497     8.79e-11      0.00
+
+     * ci vector   0, <S^2> = 0.0000, E =     -386.80045260
+       222222......     0.6225195826
+       22222ab.....    -0.4502899740
+       22222ba.....    -0.4502899740
+       2222.2.2....    -0.0750435712
+       222a2bb.a...     0.0703224777
+       222b2aa.b...     0.0703224777
+       2222.ab2....     0.0549400152
+       2222.ba2....     0.0549400152
+       2b222a2.....     0.0501423955
+       2a222b2.....     0.0501423955
+
+     * ci vector   1, <S^2> = 0.0000, E =     -386.75695497
+       222222......     0.6277980372
+       22222ab.....     0.4341100042
+       22222ba.....     0.4341100042
+       2222.2.2....    -0.0739274337
+       222a2bb.a...    -0.0607157982
+       222b2aa.b...    -0.0607157982
+       2.22222.....    -0.0553797783
+       2222.ab2....    -0.0542729191
+       2222.ba2....    -0.0542729191
+       22222b.a....     0.0538075565
+       22222a.b....     0.0538075565
+       22222.ba....    -0.0519597017
+       22222.ab....    -0.0519597017
+       22222...2...    -0.0514860069
+
+    * METHOD: CASSCF                             351.93
+
+
+    * METHOD: PRINT                                0.07
+
+
+    * METHOD: SAVE_REF                             0.17
+
+  === SMITH program ===
+
+    * freezing 10 orbitals
+    * SS-SR internal contraction is used
+
+    * Approximate memory requirement for SMITH calculation per MPI process:
+      o Storage requirement for T-amplitude, lambda, and residual is 0.43 GB
+      o Storage requirement for MO integrals is 0.03 GB
+       - MO integral evaluation                    0.74
+
+  ++ State-averaged Fock matrix over basis states ++
+
+                         0                   1
+     0       -4.5050001291       -0.0664540139
+     1       -0.0664540139       -4.4479600264
+
+
+  ++ Extended multi-state CASPT2 (XMS-CASPT2) rotation matrix ++
+
+                         0                   1
+     0       -0.8349801621        0.5502800460
+     1       -0.5502800460       -0.8349801621
+
+
+     * ci vector, state   0, <S^2> = 0.0000
+       222222......    -0.8652562347
+       22222ab.....     0.1371011224
+       22222ba.....     0.1371011224
+       2222.2.2....     0.1033406848
+       2.22222.....     0.0656971834
+       22222...2...     0.0590519843
+       .22222.....2     0.0587513047
+       222.22..2...     0.0574738581
+       22222..2....     0.0569520396
+       22.222.2....     0.0555975187
+       22222b.a....    -0.0532763344
+       22222a.b....    -0.0532763344
+
+     * ci vector, state   1, <S^2> = 0.0000
+       22222ab.....    -0.6102588292
+       22222ba.....    -0.6102588292
+       222222......    -0.1816388024
+       222a2bb.a...     0.0893935433
+       222b2aa.b...     0.0893935433
+       2222.ab2....     0.0755492049
+       2222.ba2....     0.0755492049
+       22222.ba....     0.0707436485
+       22222.ab....     0.0707436485
+       222.2ab.2...     0.0527880656
+       222.2ba.2...     0.0527880656
+       222a2ab.b...    -0.0503967172
+       222b2ba.a...    -0.0503967172
+
+  ++ Reference energies in XMS basis ++
+
+                         0                   1
+     0     -386.7872811631        0.0199859819
+     1        0.0199859819     -386.7701264061
+
+    * Calculating and saving rdm4f
+
+    * Third and Fock-weighted fourth order RDM ( 1, 1) evaluation
+      will be done with 40 passes
+       - RDM evaluation (multipassing)            35.96
+    * Third and Fock-weighted fourth order RDM ( 2, 1) evaluation
+      will be done with 40 passes
+       - RDM evaluation (multipassing)            58.06
+    * Third and Fock-weighted fourth order RDM ( 1, 2) evaluation
+      will be done with 40 passes
+       - RDM evaluation (multipassing)            58.13
+    * Third and Fock-weighted fourth order RDM ( 2, 2) evaluation
+      will be done with 40 passes
+       - RDM evaluation (multipassing)            35.38
+    - linear dependency detected:    1 /  288    min eigenvalue:    -1.3664e-14    max eigenvalue:    -1.3664e-14
+    - linear dependency detected:    1 /  288    min eigenvalue:     4.1110e-14    max eigenvalue:     4.1110e-14
+    - linear dependency detected:   12 / 1728    min eigenvalue:    -6.3819e-14    max eigenvalue:     4.7598e-14
+    - linear dependency detected:   12 / 1728    min eigenvalue:    -1.6269e-13    max eigenvalue:     2.0864e-13
+    - linear dependency detected:   12 / 1728    min eigenvalue:    -2.4119e-15    max eigenvalue:     2.5609e-15
+    - linear dependency detected:   12 / 1728    min eigenvalue:    -2.0038e-15    max eigenvalue:     2.0055e-15
+       - RDM + denominator evaluation            223.10
+
+    * Zeroth order energy : state  0       -4.5487955622
+    * Zeroth order energy : state  1       -4.4041645933
+
+    * CASPT2 iteration is performed using redundant basis
+
+      ---- iteration ----
+
+        0    -1.04560524     0.00204575      5.87
+        1    -1.04762141     0.00022643      6.30
+        2    -1.04764623     0.00002827      5.99
+        3    -1.04764663     0.00000418      6.00
+        4    -1.04764664     0.00000058      6.28
+
+        0    -1.04339040     0.00198057      6.39
+        1    -1.04536754     0.00021952      6.05
+        2    -1.04539256     0.00002777      5.98
+        3    -1.04539297     0.00000414      6.01
+        4    -1.04539298     0.00000057      6.00
+
+      -------------------
+
+       - CASPT2 energy evaluation                 62.40
+
+    * CASPT2 energy : state  0     -387.9919957762
+        w/o shift correction       -387.8349278031
+        reference weight              0.7609562792
+
+    * CASPT2 energy : state  1     -387.9721875921
+        w/o shift correction       -387.8155193898
+        reference weight              0.7614195392
+
+
+    * MS-CASPT2 Heff
+           -387.9919957762        0.0204225953
+              0.0204225953     -387.9721875921
+
+
+    * MS-CASPT2 rotation matrix
+             -0.8474529400       -0.5308705251
+              0.5308705251       -0.8474529400
+
+
+    * XMS-CASPT2 rotation matrix
+              0.9997338502       -0.0230700857
+              0.0230700857        0.9997338502
+
+    * MS-CASPT2 energy : state  0     -388.0047891166
+    * MS-CASPT2 energy : state  1     -387.9593942517
+
+
+
+    * METHOD: SMITH                              295.76
+
+
+  
+  ===============================================================
+

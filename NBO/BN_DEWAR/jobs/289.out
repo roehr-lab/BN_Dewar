@@ -1,0 +1,35 @@
+--------------------------------------------------
+JOB FRONT-END 483090 on wux54
+SLURM ENVIRONMENT
+--------------------------------------------------
+SLURM_JOB_ID                   = 483090              
+SLURM_ARRAY_JOB_ID             = N/A                 
+SLURM_ARRAY_TASK_ID            = N/A                 
+SLURM_JOB_NAME                 = qchem               
+SLURM_JOB_PARTITION            = wux5x               
+SLURM_JOB_NUM_NODES            = 1                   
+SLURM_JOB_CPUS_PER_NODE        = 8                   
+SLURM_NTASKS                   = 8                   
+SLURM_NTASKS_PER_NODE          = N/A                 
+--------------------------------------------------
+--------------------------------------------------
+PBS ENVIRONMENT
+--------------------------------------------------
+PBS_JOBID                      = 483090              
+PBS_ARRAYID                    = N/A                 
+PBS_JOBNAME                    = qchem               
+PBS_QUEUE                      = wux5x               
+PBS_NUM_NODES                  = 1                   
+PBS_NUM_PPN                    = 1                   
+PBS_NP                         = 8                   
+PBS_NODEFILE                   = /tmp/483090/nodes   
+--------------------------------------------------
+Load qchem (6.3) environment
+Starting time: Wed Jun 17 06:24:06 PM CEST 2026
+Jobname:289
+TEST:8
+job-483090.err
+job-483090.out
+/home/buehlerm/calculation/BN_Naphthalene/NBO_Calc/QCHEM/BN_DEWAR
+Running time:  0 days; 0 hours; 1 minutes; 12 seconds.
+End time: Wed Jun 17 06:25:18 PM CEST 2026

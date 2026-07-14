@@ -1,0 +1,48 @@
+You are running Q-Chem version: 6.3.1
+QCSCRATCH /scratch/483086 should NOT be the same!
+unset QCLOCALSCR ...
+
+#
+# job setting
+#
+local host:  wux51
+current dir: /scratch/483086/3
+input file:  qchem.inp
+output file: qchem.out
+nprocs     : 1
+nthreads   : 8
+#
+# qchem installation setting
+#
+QC:          /local/qchem-6.3
+QCAUX:       /local/qchem-6.3/qcaux
+QCPROG:      /local/qchem-6.3/exe/qcprog.exe_s
+QCPROG_S:    /local/qchem-6.3/exe/qcprog.exe_s
+PARALLEL:    -DSERIAL
+QCMPI:       seq
+#
+# qchem directory setting
+#
+qcrun:       qchem2569290
+QCSCRATCH:   /scratch/483086
+QCLOCALSCR:  
+QCTMPDIR:    /scratch/483086
+QCFILEPREF:  /scratch/483086/qchem2569290
+QCSAVEDIR:   /scratch/483086/qchem2569290
+workdirs:    /scratch/483086/qchem2569290
+workdir0:    /scratch/483086/qchem2569290
+partmpdirs =  
+#
+# parallel setting
+#
+The number of nodes requested is optimal
+QCRSH:           ssh
+QCMPI:           seq
+QCMPIRUN:        
+QCMACHINEFILE:   /tmp/483086/nodes
+QCMACHINEFILE /tmp/483086/nodes cannot be found
+
+#
+# env setting
+#
+exported envs:   QC QCAUX QCSCRATCH QCRUNNAME QCFILEPREF QCPROG QCPROG_S GUIFILE

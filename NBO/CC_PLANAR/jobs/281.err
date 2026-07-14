@@ -1,0 +1,3 @@
+mkdir: cannot create directory ‘jobs’: File exists
+dirname: missing operand
+Try 'dirname --help' for more information.
